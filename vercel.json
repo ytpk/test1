@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "/src/worker-vless.js",
+      "src": "/test/**",
       "use": "@vercel/node"
     }
   ],
