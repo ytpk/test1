@@ -1,15 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "/test/**",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/src/worker-vless.js"
-    }
-  ]
+  "name": "native-server",
+  "builds": [{ "src": "/src/worker-vless.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/src/worker-vless.js" }]
 }
